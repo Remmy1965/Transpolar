@@ -853,23 +853,77 @@ video {
   font-family: 'Sarabun', 'sans-serif';
 }
 
-.header {
+.overall {
+  /* position: relative; */
+}
+
+.sliders {
+  display: flex;
+  /* overflow-x: hidden; */
+  /* scroll-snap-type: x mandatory; */
+  /* scroll-behavior: smooth; */
+  transition: all 0.5s;
+  position: relative;
   height: 90vh;
+  width: 100%;
+}
+
+.slider {
+  /* flex: 0 0 100%; */
+  /* scroll-snap-align: start; */
+  height: 90vh;
+  width: 100%;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  position: absolute;
+  top: 0;
+  transition: all 0.5s
 }
 
-/* .layer {
-  background-color: black;
+.prev,
+.next {
   position: absolute;
-  width: 100%;
-  height: 100%;
-  opacity: 5%;
-  top: 0;
-  left: 0;
-} */
+  top: 50%;
+  transform: translateY(-50%);
+  padding: 16px;
+  font-size: 24px;
+  font-weight: bold;
+  cursor: pointer;
+  z-index: 1;
+  background-color: rgba(255, 255, 255, 0.21);
+}
+
+.prev:hover,
+.next:hover {
+  background-color: #f7f7f9;
+  transition: all 0.3s;
+}
+
+.slider-btn {
+  position: absolute;
+  bottom: 20%;
+  left: 47%;
+}
+
+.slider-btn button:hover,
+.slider-btn button:focus,
+.slider-btn button:active {
+  transition: all 0.3s;
+}
+
+.dots__dot--active {
+  background-color: #f52029;
+}
+
+.prev {
+  left: 1%;
+}
+
+.next {
+  right: 1%;
+}
 
 .nav {
   background-color: transparent;
@@ -881,13 +935,39 @@ video {
   width: 100%;
 }
 
+.stick {
+  background-color: #f7f7f9;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  padding: 15px;
+  z-index: 50;
+  width: 100%;
+  transition: all 0.3s;
+}
+
 .trans {
   font-size: 40px;
   font-weight: 700;
   color: #f52029;
 }
 
+.sticky-trans {
+  font-size: 40px;
+  font-weight: 700;
+  color: #181d2e;
+}
+
 .second-nav-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 15px;
+  font-weight: 700;
+  color: white;
+}
+
+.sticky-second-nav-container {
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -900,7 +980,21 @@ video {
   transition: all 0.5s;
 }
 
+.sticky-links-container a {
+  transition: all 0.5s;
+}
+
 .links-container a:hover {
+  color: #f52029;
+  font-weight: 400;
+}
+
+.sticky-links-container a {
+  color: #181d2e;
+  font-weight: 600;
+}
+
+.sticky-links-container a:hover {
   color: #f52029;
   font-weight: 400;
 }
@@ -912,7 +1006,20 @@ video {
   text-decoration: none;
 }
 
+.sticky-links-container a:active,
+.stickey-links-container a:focus {
+  color: #f52029;
+  font-weight: 400;
+  text-decoration: none;
+}
+
 .icons-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.sticky-icons-container {
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -924,11 +1031,21 @@ video {
   border-radius: 50%;
 }
 
+.sticky-moon img {
+  filter: brightness(0%);
+}
+
+.sticky-search {
+  background-color: #f7f7f9;
+  padding: 10px;
+  border-radius: 50%;
+}
+
 .hero p {
   font-size: 15px;
   color: #666;
   margin-bottom: 5px;
-  font-weight: 600;
+  font-weight: 700;
   letter-spacing: 4;
   text-transform: uppercase;
   text-align: center;
@@ -1302,18 +1419,46 @@ video {
 
 .section-testimonials {
   display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
   padding: 6rem 8rem;
+  /* height: 35rem; */
+  /* overflow: hidden; */
+  /* position: relative; */
+}
+
+.general-testimonial-box {
+  /* display: flex;
+  justify-content: center;
+  overflow: hidden;
+  top: 5rem;
+  left: 8rem;
+  width: 100%; */
+  display: flex;
+  margin: 0 auto;
+  position: relative;
+  height: 25rem;
+  width: 40rem;
+  /* IN THE END */
+  overflow: hidden;
+}
+
+.testimonial-box {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: auto;
+  /* display: flex; */
+  /* align-items: center; */
+  /* justify-content: center; */
+  /* THIS creates the animation! */
+  transition: transform 1s;
 }
 
 .testimonial-box p {
   color: #d4d4d4;
   font-weight: 600;
-}
-
-.testimonial-box {
-  padding-right: 25rem;
 }
 
 .testimonial-box h2 {
@@ -1323,9 +1468,13 @@ video {
   text-transform: capitalize;
 }
 
-.testimonial-box button:hover {
+.testimonial-btn button:hover {
   background-color: #f52029;
   transition: all 0.2s;
+}
+
+.dots__dot__testimonial--active {
+  background-color: #f52029;
 }
 
 .section-article {

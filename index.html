@@ -10,10 +10,11 @@
     <link
       href="https://fonts.googleapis.com/css2?family=Sarabun:wght@400;500;600;700&display=swap"
       rel="stylesheet" />
+      <script src="script.js" defer></script>
     <title>Transpolar- Autos & Transport Company</title>
   </head>
   <body>
-    <nav class="fixed nav">
+    <nav class="fixed nav first-nav">
       <a href="#" class="trans">Transpolar</a>
       <div class="second-nav-container space-x-10">
         <div class="links-container space-x-4">
@@ -33,19 +34,88 @@
         </div>
       </div>
     </nav>
-    <header
-      class="relative header bg-cover bg-center bg-no-repeat"
-      style="
-        background-image: url(Images/Optimized-bernd-dittrich-eCc7FjMoR74-unsplash.jpg);
-      ">
-      <div class="layer"></div>
-
-      <div class="hero">
-        <p>Make the right move.</p>
-        <h1>Moving your products across all borders.</h1>
-        <div>
-          <button class="button-learn px-8 py-5">Learn More</button>
+    <nav class="hidden fixed second-nav">
+      <a href="#" class="sticky-trans">Transpolar</a>
+      <div class="sticky-second-nav-container space-x-10">
+        <div class="sticky-links-container space-x-4">
+          <a href="#">Home</a>
+          <a href="#">About</a>
+          <a href="#">Services</a>
+          <a href="#">Pages</a>
+          <a href="#">Contact</a>
         </div>
+        <div class="sticky-icons-container space-x-4">
+          <button class="sticky-search">
+            <img src="Images/search (3).png" alt="" />
+          </button>
+          <button class="sticky-moon">
+            <img src="Images/night-mode (1).png" alt="" />
+          </button>
+        </div>
+      </div>
+    </nav>
+    <header class="overall overflow-hidden">
+      <div class="sliders ">
+        <div class=" hero slider bg-cover bg-center bg-no-repeat"
+        style="
+          background-image: url(Images/Optimized-bernd-dittrich-eCc7FjMoR74-unsplash.jpg);
+        ">
+          <p>Make the right move.</p>
+          <h1>Moving your products across all borders.</h1>
+          <div>
+            <button class="button-learn px-8 py-5">Learn More</button>
+          </div>
+        </div>
+        <div class=" hero slider bg-cover bg-center bg-no-repeat"
+          style="
+           background-image: linear-gradient(
+                  rgba(0, 0, 0, 0.3),
+                  rgba(0, 0, 0, 0.3)
+                ),
+                url(Images/Optimized-gabriel-santos-GBVDilE8yvI-unsplash.jpg)">
+            <p>go smoothly with safety.</p>
+            <h1>we are here to move your busines.</h1>
+            <div>
+              <button class="button-learn px-8 py-5">Learn More</button>
+            </div>
+          
+        </div>
+        <div class=" hero slider bg-cover bg-center bg-no-repeat"
+        style="
+        background-image: linear-gradient(
+               rgba(0, 0, 0, 0.3),
+               rgba(0, 0, 0, 0.3)
+             ),
+             url(Images/Optimized-adrian-sulyok-sczNLg6rrhQ-unsplash.jpg)">
+            <p>Make the right move.</p>
+            <h1>Moving your products across all borders.</h1>
+            <div>
+              <button class="button-learn px-8 py-5">Learn More</button>
+            </div>
+          
+        </div>
+        <div class=" hero slider bg-cover bg-center bg-no-repeat"
+        style="
+        background-image: linear-gradient(
+               rgba(0, 0, 0, 0.3),
+               rgba(0, 0, 0, 0.3)
+             ),
+             url(Images/Optimized-aron-yigin-sNY6B9NsPP8-unsplash.jpg)">
+            <p>go smoothly with safety.</p>
+            <h1>we are here to move your busines.</h1>
+            <div>
+              <button class="button-learn px-8 py-5">Learn More</button>
+            </div>
+          
+        </div>
+      </div>
+      <button href="" class="prev rounded-full ">
+        <img src="Images/previous.png" alt="">
+      </button>
+      <button href="" class="next rounded-full">
+        <img src="Images/next.png" alt="">
+      </button>
+      <div class="flex space-x-3 slider-btn">
       </div>
     </header>
     <section class="section-movers my-0 mx-auto">
@@ -239,74 +309,62 @@
       rgba(0, 0, 0, 0.3)
     ),
     url(Images/Optimized-keith-misner-h0Vxgz5tyXA-unsplash.jpg);">
-    <div class="testimonial-box">
-      <img src="images/left-quote.png" class="h-16 w-16" alt="quote">
-      <p class="container-paragraph max-w-[42rem]">Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit beatae laudantium voluptate rem ullam dolore nisi voluptatibus esse quasi, doloribus tempora. Dolores molestias adipisci dolor sit amet! by the Desire to achieve Success.</p>
-      <div class="flex items-center space-x-3 mt-[2rem]">
-        <img src="Images/john wilson.jpg" class="h-[70px] w-[70px] rounded-full" alt="">
-        <div class="flex flex-col gap-[2px]">
-          <h2>John wilson</h2>
-          <p>subtitle goes here</p>
+        <div class="general-testimonial-box">
+          <div class="testimonial-box">
+            <img src="images/left-quote.png" class="h-16 w-16" alt="quote">
+            <p class="container-paragraph max-w-[42rem]">Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit beatae laudantium voluptate rem ullam dolore nisi voluptatibus esse quasi, doloribus tempora. Dolores molestias adipisci dolor sit amet! by the Desire to achieve Success.</p>
+            <div class="flex items-center space-x-3 mt-[2rem]">
+              <img src="Images/john wilson.jpg" class="h-[70px] w-[70px] rounded-full" alt="">
+              <div class="flex flex-col gap-[2px]">
+                <h2>John wilson</h2>
+                <p>subtitle goes here</p>
+              </div>
+            </div>
+          </div>
+          <div class="testimonial-box">
+            <img src="images/left-quote.png" class="h-16 w-16" alt="quote">
+            <p class="container-paragraph max-w-[42rem]">Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit beatae laudantium voluptate rem ullam dolore nisi voluptatibus esse quasi, doloribus tempora. Dolores molestias adipisci dolor sit amet! by the Desire to achieve Success.</p>
+            <div class="flex items-center space-x-3 mt-[2rem]">
+              <img src="Images/julia sakura.jpg" class="h-[70px] w-[70px] rounded-full" alt="">
+              <div class="flex flex-col gap-[2px]">
+                <h2>julia sakura</h2>
+                <p>subtitle goes here</p>
+              </div>
+            </div>
+            
+          </div>
+          <div class="testimonial-box">
+            <img src="images/left-quote.png" class="h-16 w-16" alt="quote">
+            <p class="container-paragraph max-w-[42rem]">Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit beatae laudantium voluptate rem ullam dolore nisi voluptatibus esse quasi, doloribus tempora. Dolores molestias adipisci dolor sit amet! by the Desire to achieve Success.</p>
+            <div class="flex items-center space-x-3 mt-[2rem]">
+              <img src="Images/roy.jpg" class="h-[70px] w-[70px] rounded-full" alt="">
+              <div class="flex flex-col gap-[2px]">
+                <h2>roy mmdson</h2>
+                <p>subtitle goes here</p>
+              </div>
+            </div>
+            
+          </div>
+          <div class="testimonial-box">
+            <img src="images/left-quote.png" class="h-16 w-16" alt="quote">
+            <p class="container-paragraph max-w-[42rem]">Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit beatae laudantium voluptate rem ullam dolore nisi voluptatibus esse quasi, doloribus tempora. Dolores molestias adipisci dolor sit amet! by the Desire to achieve Success.</p>
+            <div class="flex items-center space-x-3 mt-[2rem]">
+              <img src="Images/john wilson.jpg" class="h-[70px] w-[70px] rounded-full" alt="">
+              <div class="flex flex-col gap-[2px]">
+                <h2>mike thyson</h2>
+                <p>subtitle goes here</p>
+              </div>
+            </div>
+          </div>
         </div>
+        <!-- <div class="second-box w-1/2"></div> -->
       </div>
-      <div class="flex space-x-3">
-        <button class="h-[15px] w-[15px] rounded-full bg-[#f52029] mt-[5rem]"></button>
+      <div class="flex space-x-3 testimonial-btn">
+        <!-- <button class="h-[15px] w-[15px] rounded-full bg-[#f52029] mt-[5rem]"></button>
         <button class="h-[15px] w-[15px] rounded-full bg-[#d4d4d4] mt-[5rem]"></button>
         <button class="h-[15px] w-[15px] rounded-full bg-[#d4d4d4] mt-[5rem]"></button>
-        <button class="h-[15px] w-[15px] rounded-full bg-[#d4d4d4] mt-[5rem]"></button>
+        <button class="h-[15px] w-[15px] rounded-full bg-[#d4d4d4] mt-[5rem]"></button> -->
       </div>
-    </div>
-    <div class="testimonial-box hidden">
-      <img src="images/left-quote.png" class="h-16 w-16" alt="quote">
-      <p class="container-paragraph max-w-[42rem]">Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit beatae laudantium voluptate rem ullam dolore nisi voluptatibus esse quasi, doloribus tempora. Dolores molestias adipisci dolor sit amet! by the Desire to achieve Success.</p>
-      <div class="flex items-center space-x-3 mt-[2rem]">
-        <img src="Images/julia sakura.jpg" class="h-[70px] w-[70px] rounded-full" alt="">
-        <div class="flex flex-col gap-[2px]">
-          <h2>julia sakura</h2>
-          <p>subtitle goes here</p>
-        </div>
-      </div>
-      <div class="flex space-x-3">
-        <button class="h-[15px] w-[15px] rounded-full bg-[#f52029] mt-[5rem]"></button>
-        <button class="h-[15px] w-[15px] rounded-full bg-[#d4d4d4] mt-[5rem]"></button>
-        <button class="h-[15px] w-[15px] rounded-full bg-[#d4d4d4] mt-[5rem]"></button>
-        <button class="h-[15px] w-[15px] rounded-full bg-[#d4d4d4] mt-[5rem]"></button>
-      </div>
-    </div>
-    <div class="testimonial-box hidden">
-      <img src="images/left-quote.png" class="h-16 w-16" alt="quote">
-      <p class="container-paragraph max-w-[42rem]">Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit beatae laudantium voluptate rem ullam dolore nisi voluptatibus esse quasi, doloribus tempora. Dolores molestias adipisci dolor sit amet! by the Desire to achieve Success.</p>
-      <div class="flex items-center space-x-3 mt-[2rem]">
-        <img src="Images/roy.jpg" class="h-[70px] w-[70px] rounded-full" alt="">
-        <div class="flex flex-col gap-[2px]">
-          <h2>roy mmdson</h2>
-          <p>subtitle goes here</p>
-        </div>
-      </div>
-      <div class="flex space-x-3">
-        <button class="h-[15px] w-[15px] rounded-full bg-[#f52029] mt-[5rem]"></button>
-        <button class="h-[15px] w-[15px] rounded-full bg-[#d4d4d4] mt-[5rem]"></button>
-        <button class="h-[15px] w-[15px] rounded-full bg-[#d4d4d4] mt-[5rem]"></button>
-        <button class="h-[15px] w-[15px] rounded-full bg-[#d4d4d4] mt-[5rem]"></button>
-      </div>
-    </div>
-    <div class="testimonial-box hidden">
-      <img src="images/left-quote.png" class="h-16 w-16" alt="quote">
-      <p class="container-paragraph max-w-[42rem]">Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit beatae laudantium voluptate rem ullam dolore nisi voluptatibus esse quasi, doloribus tempora. Dolores molestias adipisci dolor sit amet! by the Desire to achieve Success.</p>
-      <div class="flex items-center space-x-3 mt-[2rem]">
-        <img src="Images/john wilson.jpg" class="h-[70px] w-[70px] rounded-full" alt="">
-        <div class="flex flex-col gap-[2px]">
-          <h2>mike thyson</h2>
-          <p>subtitle goes here</p>
-        </div>
-      </div>
-      <div class="flex space-x-3">
-        <button class="h-[15px] w-[15px] rounded-full bg-[#f52029] mt-[5rem]"></button>
-        <button class="h-[15px] w-[15px] rounded-full bg-[#d4d4d4] mt-[5rem]"></button>
-        <button class="h-[15px] w-[15px] rounded-full bg-[#d4d4d4] mt-[5rem]"></button>
-        <button class="h-[15px] w-[15px] rounded-full bg-[#d4d4d4] mt-[5rem]"></button>
-      </div>
-    </div>
     </section>
     <section class="section-article">
       <p class="container-heading">our article</p>
